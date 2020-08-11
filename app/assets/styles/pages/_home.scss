@@ -1,78 +1,57 @@
-.starter {
-  min-height: 100vh;
-
-  margin: auto;
+.section-header {
+  min-height: 15vh;
   @include flex(row, center, center);
-  background: $color-primary;
-  color: $color-white;
-  .logo {
-    background: $color-grey-light-3;
-    color: #000;
-    @include flex(column, center, center);
-    padding: 4rem;
-    border-radius: 1rem;
-    animation: tofro 4s ease-in-out infinite alternate;
-    h2 {
-      background: linear-gradient(
-        -45deg,
-        $color-primary 0% 50%,
-        $color-black 50% 100%
-      );
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
+  position: relative;
+}
+
+.section-hero {
+  min-height: 90vh;
+  width: 100%;
+}
+
+.section-features {
+  min-height: 40vh;
+  position: relative;
+  top: -40vh;
+}
+
+.section-tours {
+  min-height: 100vh;
+}
+
+.tour {
+  @include flex(column, center, center);
+
+  &-heading {
+    min-height: 30vh;
+    top: -10vh;
+    position: relative;
+    @include flex(column, space-evenly, center);
+    height: 30vh;
+    max-width: 50rem;
+    text-align: center;
+  }
+  &-packages {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    max-width: 90%;
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
     }
-    img {
-      animation: rotate360 5s ease-in-out infinite;
-    }
   }
 }
 
-@keyframes tofro {
-  0% {
-    transform: translateX(-10%);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(10%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0%) scale(1.5);
-  }
+.section-subscription {
+  min-height: 60vh;
+  margin-top: 10rem;
 }
 
-@keyframes rotate360 {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
-  }
+.section-footer {
+  background: #f8e1db;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  padding: 4rem;
+  min-height: 60vh;
+  margin-top: 8rem;
 }
-
-// {
-//   "name": "starter",
-//   "version": "1.0.0",
-//   "description": "",
-//   "main": "index.js",
-//   "scripts": {
-//     "watch:scss": "node-sass sass/main.scss css/styles.css -w",
-//     "devserver": "live-server",
-//     "devstart": "npm-run-all --parallel devserver watch:scss",
-//     "compile:sass": "node-sass sass/main.scss css/styles.comp.css",
-//     "prefix:css": "postcss --use autoprefixer -b \"last 5 versions\" css/styles.comp.css -o css/styles.prefix.css",
-//     "compress:css": "node-sass css/styles.prefix.css css/styles.css --output-style compressed",
-//     "build:css": "npm-run-all compile:sass prefix:css compress:css"
-//   },
-//   "author": "Khanx",
-//   "license": "ISC",
-//   "dependencies": {},
-//   "devDependencies": {
-//     "autoprefixer": "^9.8.5",
-//     "concat": "^1.0.3",
-//     "node-sass": "^4.14.1",
-//     "npm-run-all": "^4.1.5",
-//     "postcss-cli": "^7.1.1"
-//   }
-// }
