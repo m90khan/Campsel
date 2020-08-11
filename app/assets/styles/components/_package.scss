@@ -1,0 +1,37 @@
+.package {
+  flex: 0 0 20rem;
+  background: $color-grey-light-1;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  &-header {
+    position: relative;
+    &__wishlist {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-primary;
+      position: absolute;
+    }
+    &__price {
+      color: $color-primary;
+      background: $color-grey-light-1;
+      border-radius: 1rem;
+      max-width: 10rem;
+      margin: auto;
+      padding: 1.2rem 2rem;
+      position: relative;
+      top: -4vh;
+    }
+  }
+  &-content {
+    text-align: center;
+    @include flex(column, space-evenly, center);
+    & > *:not(last-child) {
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+}

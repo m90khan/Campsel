@@ -1,0 +1,71 @@
+.header {
+  @include flex(row, space-evenly, center);
+  @include centerAuto;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 15vh;
+  z-index: 100;
+  .logo {
+    margin-right: auto;
+    flex: 0 0 5%;
+    img {
+      background: $color-primary;
+      padding: 1rem;
+      border-radius: 5rem;
+      margin-right: auto;
+    }
+  }
+  .navigation {
+    margin-right: auto;
+    flex: 1 0 60%;
+    &-list {
+      @include flex(row, space-evenly, center);
+      &__link {
+        color: $color-grey-light-2;
+        &:hover {
+          color: $color-primary;
+          text-shadow: 2px 2px 4px $color-white;
+        }
+      }
+    }
+  }
+
+  .accounts {
+    flex: 1 0 20%;
+    @include flex(row, flex-end, center);
+    *:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.hero {
+  &-image {
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: -20vh;
+    object-fit: cover;
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-grey-light-1;
+    text-align: center;
+    &__heading {
+      line-height: 1.2;
+    }
+    &__subheading {
+      max-width: 40rem;
+      margin: auto;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+    button {
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+  }
+}
