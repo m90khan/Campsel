@@ -20,6 +20,9 @@
       height: 2rem;
       fill: $color-primary;
       position: absolute;
+      overflow: hidden;
+      top: 1rem;
+      right: 2rem;
     }
     &__price {
       color: $color-primary;

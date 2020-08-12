@@ -15,7 +15,6 @@ class TourPackage {
       "resize",
       debounce(() => {
         this.windowHeight = window.innerHeight;
-        console.log("resize");
       }, 333)
     );
   }

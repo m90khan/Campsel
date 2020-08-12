@@ -5,12 +5,19 @@ class Navigation {
   constructor(burger, menu) {
     this.burger = document.querySelector(".header__burger");
     this.menu = document.querySelector(".header-menu");
+    this.scroltoTop = document.querySelector(".footer-links-scrollbtn");
     this.events();
   }
 
   events() {
     this.burger.addEventListener("click", this.menuToggle);
+    this.scroltoTop.addEventListener("click", this.topFunction);
   }
+  topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
   menuToggle(e) {
     if (!e.target.classList.contains("active")) {
       e.target.classList.add("active");

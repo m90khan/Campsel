@@ -2,7 +2,12 @@
   min-height: 15vh;
   @include flex(row, center, center);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  z-index: 300;
+
+  &--sticky {
+    position: fixed;
+  }
 }
 
 .section-hero {
