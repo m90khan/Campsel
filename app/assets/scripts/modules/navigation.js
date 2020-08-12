@@ -1,3 +1,12 @@
+// typical import
+import gsap from "gsap";
+
+// or get other plugins:
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+// don't forget to register plugins
+gsap.registerPlugin(ScrollTrigger);
+
 const burger = document.querySelector(".header__burger");
 const menu = document.querySelector(".header-menu");
 
