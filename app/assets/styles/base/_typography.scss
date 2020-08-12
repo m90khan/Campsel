@@ -32,8 +32,9 @@ h5 {
   font-size: var(--h5);
 }
 h6 {
-  @extend %heading;
-  font-size: var(--h5);
+  @extend %paragraph;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 li,
 button,

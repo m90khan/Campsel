@@ -10,26 +10,48 @@
 
     <header class="section-header">
       <div class="header">
-        <div class="logo">
-          <img src="./assets/images/svg/logo.svg" alt="logo" />
+        <div class="header-logo">
+          <a href=""> <img src="./assets/images/svg/logo.svg" alt="logo" /> </a>
         </div>
-        <nav class="navigation">
-          <ul class="navigation-list">
-            <li>
-              <a href="./index.html" class="navigation-list__link">Home</a>
-            </li>
-            <li><a href="#" class="navigation-list__link">Destination</a></li>
-            <li><a href="#" class="navigation-list__link">Near me</a></li>
-            <li><a href="#" class="navigation-list__link">Events</a></li>
-            <li><a href="#" class="navigation-list__link">Blog</a></li>
-            <li><a href="#" class="navigation-list__link">Gallery</a></li>
-            <li><a href="#" class="navigation-list__link">About</a></li>
-            <li><a href="#" class="navigation-list__link">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="accounts">
-          <button class="btn btn--secondary">Sign up</button>
-          <button class="btn btn--primary">Sign in</button>
+        <div class="header-menu">
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a href="./index.html" class="navigation-list__item-link"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">Destination</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">Near me</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">Events</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">Blog</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">Gallery</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">About</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__item-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="accounts">
+            <button class="btn btn--secondary">Sign up</button>
+            <button class="btn btn--primary">Sign in</button>
+          </div>
+        </div>
+        <div class="header__burger">
+          <div class="header__burger--line1"></div>
+          <div class="header__burger--line2"></div>
         </div>
       </div>
     </header>
@@ -210,7 +232,7 @@
               </div>
             </div>
           </div>
-          <button class="btn btn--secondary btn--secondary-outline">
+          <button class="btn btn--secondary u-mt-8 btn--secondary-outline">
             View All
           </button>
         </div>
@@ -376,6 +398,10 @@
         </p>
       </div>
     </footer>
+    <div class="cursor">
+      <span class="cursor__text cursor__text--1"></span>
+      <span class="cursor__text cursor__text--2"></span>
+    </div>
     <script src="./bundled.js"></script>
   </body>
 </html>
