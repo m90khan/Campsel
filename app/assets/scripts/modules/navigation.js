@@ -1,40 +1,82 @@
 // typical import
 import gsap from "gsap";
 
-// or get other plugins:
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-// don't forget to register plugins
-gsap.registerPlugin(ScrollTrigger);
-
-const burger = document.querySelector(".header__burger");
-const menu = document.querySelector(".header-menu");
-
-burger.addEventListener("click", (e) => {
-  const child1 = burger.children[0];
-  const child2 = burger.children[1];
-
-  if (!e.target.classList.contains("active")) {
-    e.target.classList.add("active");
-    child1.style.transform = "rotate(45deg)";
-    child2.style.transform = "rotate(-45deg)";
-
-    child1.style.background = "black";
-    child1.style.top = "0.5rem";
-    child2.style.background = "black";
-    burger.style.zIndex = 300;
-
-    menu.style.clipPath = "circle(200% at 100% -50%)";
-    document.body.classList.add("hide");
-  } else {
-    e.target.classList.remove("active");
-    child1.style.transform = "rotate(0deg)";
-    child2.style.transform = "rotate(0deg)";
-    menu.style.clipPath = "circle(50px at 100% -50%)";
-    child1.style.top = "0rem";
-
-    child1.style.background = "white";
-    child2.style.background = "white";
-    document.body.classList.remove("hide");
+class Navigation {
+  constructor(burger, menu) {
+    this.burger = document.querySelector(".header__burger");
+    this.menu = document.querySelector(".header-menu");
+    this.events();
   }
-});
+
+  events() {
+    this.burger.addEventListener("click", this.menuToggle);
+  }
+  menuToggle(e) {
+    if (!e.target.classList.contains("active")) {
+      e.target.classList.add("active");
+      gsap.to(".header__burger--line1", 0.5, {
+        rotate: "45",
+        y: 4,
+        background: "black",
+      });
+      gsap.to(".header__burger--line2", 0.5, {
+        rotate: "-45",
+        y: -2,
+        background: "black",
+      });
+      gsap.to(".header__burger", { zIndex: 400 });
+      gsap.to(".header-menu", 1, { clipPath: "circle(200% at 100% -10%)" });
+      document.body.classList.add("hide");
+    } else {
+      e.target.classList.remove("active");
+      gsap.to(".header__burger--line1", 0.5, {
+        rotate: "0",
+        y: 0,
+        background: "white",
+      });
+      gsap.to(".header__burger--line2", 0.5, {
+        rotate: "-0",
+        y: 0,
+        background: "white",
+      });
+      gsap.to(".header-menu", 1, { clipPath: "circle(50px at 100% -10%)" });
+      document.body.classList.remove("hide");
+    }
+  }
+}
+export default Navigation;
+// const burger = document.querySelector(".header__burger");
+// const menu = document.querySelector(".header-menu");
+
+// burger.addEventListener("click", (e) => {
+//   if (!e.target.classList.contains("active")) {
+//     e.target.classList.add("active");
+//     gsap.to(".header__burger--line1", 0.5, {
+//       rotate: "45",
+//       y: 5,
+//       background: "black",
+//     });
+//     gsap.to(".header__burger--line2", 0.5, {
+//       rotate: "-45",
+//       y: -2,
+//       background: "black",
+//     });
+//     gsap.to(".header-logo", { zIndex: 400 });
+//     gsap.to(".header-menu", 1, { clipPath: "circle(200% at 100% -10%)" });
+//     document.body.classList.add("hide");
+//   } else {
+//     e.target.classList.remove("active");
+//     gsap.to(".header__burger--line1", 0.5, {
+//       rotate: "0",
+//       y: 0,
+//       background: "white",
+//     });
+//     gsap.to(".header__burger--line2", 0.5, {
+//       rotate: "-0",
+//       y: 0,
+//       background: "white",
+//     });
+//     gsap.to(".header-menu", 1, { clipPath: "circle(50px at 100% -10%)" });
+//     document.body.classList.remove("hide");
+//   }
+// });

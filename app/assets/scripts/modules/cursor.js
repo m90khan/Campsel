@@ -5,3 +5,9 @@ function cursor(e) {
   mouse.style.left = e.pageX + "px";
 }
 window.addEventListener("mousemove", cursor);
+
+class Cursor {
+  constructor(cursor) {}
+}
+
+export default Cursor;

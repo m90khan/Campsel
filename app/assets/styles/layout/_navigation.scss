@@ -1,6 +1,7 @@
 .cursor {
   width: 3rem;
   height: 3rem;
+
   border: 2px solid $color-white;
   border-radius: 5rem;
   position: absolute;
@@ -9,10 +10,9 @@
   transition: all 0.5s ease-in-out;
   transition-property: background, transform;
   transform-origin: 80% 80%;
-  z-index: 310;
   &__text {
     position: absolute;
-
+    content: "Hello";
     transform: translate(-50%, -50%);
     font-size: 0.5rem;
     border-radius: 50%;
@@ -20,14 +20,15 @@
     width: 0;
     margin-top: 0;
     margin-left: 0;
+
     &--1 {
-      animation: pulse 2s ease-in-out infinite;
+      // animation: pulse 2s ease-in-out infinite;
       background: $color-grey-dark-1;
       top: 50%;
       left: 50%;
     }
     &--2 {
-      animation: pulse 4s ease-in-out infinite;
+      // animation: pulse 4s ease-in-out infinite;
       background: $color-primary;
       top: 50%;
       left: 50%;
@@ -35,9 +36,6 @@
   }
 }
 
-html {
-  cursor: none;
-}
 .cursor.header--active {
   background: $color-primary;
   transform: scale(3);
