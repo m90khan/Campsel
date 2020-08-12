@@ -48,3 +48,11 @@
     }
   }
 }
+
+.package__reveal {
+  opacity: 0;
+  transition: 0.2s all ease-in;
+  &--visible {
+    opacity: 1;
+  }
+}

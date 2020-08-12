@@ -1,9 +1,10 @@
 import "../styles/main.scss";
-import Cursor from "../scripts/modules/cursor";
+import "../scripts/modules/cursor";
 import Navigation from "../scripts/modules/navigation";
-
-const cursorCircle = new Cursor();
+import TourPackage from "../scripts/modules/tourPackage";
 const navMenu = new Navigation();
+new TourPackage(document.querySelectorAll(".package"));
+new TourPackage(document.querySelectorAll(".feature"));
 if (module.hot) {
   module.hot.accept();
 }
