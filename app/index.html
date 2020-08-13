@@ -68,8 +68,12 @@
       <!-- Hero Section -->
       <div class="section-hero">
         <div class="hero">
+          <!-- <div class="wrapper wrapper--medium wrapper--b-margin">
+            <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
+          </div> -->
           <picture>
             <source
+              sizes="2010px "
               srcset="
                 ./assets/images/img/hero-background.png    2010w,
                 ./assets/images/img/hero-background-2x.png 4020w
@@ -77,6 +81,7 @@
               media="(min-width: 1800px)"
             />
             <source
+              sizes="1800px "
               srcset="
                 ./assets/images/img/hero-desktop.png 1800w,
                 ./assets/images/img/hero-desktop.png 3600w
@@ -84,6 +89,7 @@
               media="(min-width: 1200px)"
             />
             <source
+              sizes="1200px "
               srcset="
                 ./assets/images/img/hero-ipadpro.png    1200w,
                 ./assets/images/img/hero-ipadpro-2x.png 2400w
@@ -92,6 +98,7 @@
             />
 
             <source
+              sizes="900px "
               srcset="
                 ./assets/images/img/hero-ipad.png     900w,
                 ./assets/images/img/hero-ipad-2x.png 1800w
@@ -99,6 +106,7 @@
               media="(min-width: 600px)"
             />
             <img
+              sizes="600px "
               srcset="
                 ./assets/images/img/hero-mobile.png  600w,
                 ./assets/images/img/hero-mobile.png 1200w
@@ -185,11 +193,15 @@
 
             <div class="package">
               <div class="package-header">
-                <img
-                  data-srcset="./assets/images/img/trickle creek ranch.png"
-                  alt="Tickle Creek Ranch"
-                  class="lazyload package-header__image"
-                />
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/trickle-creek-ranch.png 277w, ./assets/images/img/trickle-creek-ranch-2x.png 554w"
+                    alt="Tickle Creek Ranch"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
+
                 <svg
                   class="package-header__wishlist package-header__wishlist--active"
                 >
@@ -210,11 +222,14 @@
             <!--Package 2-->
             <div class="package">
               <div class="package-header">
-                <img
-                  src="./assets/images/img/Dragonfly Tiny Cabin.png"
-                  alt="Dragonfly Tiny Cabin"
-                  class="package-header__image"
-                />
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/dragonfly-tiny-cabin.png 277w, ./assets/images/img/dragonfly-tiny-cabin-2x.png 554w"
+                    alt="Dragonfly Tiny Cabin"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
                 <svg class="package-header__wishlist">
                   <use
                     xlink:href="./assets/images/icons/sprite.svg#icon-heart"
@@ -233,11 +248,14 @@
             <!--Package 3-->
             <div class="package">
               <div class="package-header">
-                <img
-                  src="./assets/images/img/Tiny Cabin in the mountains.png"
-                  alt="Tiny Cabin in the mountains"
-                  class="package-header__image"
-                />
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/tiny-cabin-mountains.png 277w, ./assets/images/img/tiny-cabin-mountains-2x.png 554w"
+                    alt="Tiny Cabin in the mountains"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
                 <svg class="package-header__wishlist">
                   <use
                     xlink:href="./assets/images/icons/sprite.svg#icon-heart"
@@ -257,11 +275,15 @@
             <!--Package 4-->
             <div class="package">
               <div class="package-header">
-                <img
-                  src="./assets/images/img/The Stuga.png"
-                  alt="The Stuga"
-                  class="package-header__image"
-                />
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/the-stuga.png 277w, ./assets/images/img/the-stuga-2x.png 554w"
+                    alt="The Stuga"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
+
                 <svg class="package-header__wishlist">
                   <use
                     xlink:href="./assets/images/icons/sprite.svg#icon-heart"
@@ -345,14 +367,22 @@
             Download Our App
           </h4>
           <div class="footer-text-apps">
-            <img
-              src="./assets/images/img/app-store-apple.png"
-              alt="download app store apple"
-            />
-            <img
-              src="./assets/images/img/app-store-google.png"
-              alt="download app store google"
-            />
+            <picture>
+              <img
+                sizes="147px"
+                data-srcset="./assets/images/img/app-store-apple.png 147w, ./assets/images/img/app-store-apple.png 294w"
+                alt="download app store apple"
+                class="lazyload"
+              />
+            </picture>
+            <picture>
+              <img
+                sizes="147px"
+                data-srcset="./assets/images/img/app-store-google.png 147w, ./assets/images/img/app-store-google.png 294w"
+                alt="download app store google"
+                class="lazyload"
+              />
+            </picture>
           </div>
         </div>
         <div class="footer-links">
