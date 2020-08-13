@@ -73,3 +73,19 @@
 body.hide {
   overflow: hidden;
 }
+
+.client-area {
+  padding: 30px;
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    flex: 1;
+  }
+
+  &__error {
+    color: red;
+  }
+}
