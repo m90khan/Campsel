@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "gsap": "^3.4.2",
+    "lazysizes": "^5.2.2",
     "lodash": "^4.17.19"
   }
 }

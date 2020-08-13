@@ -32,8 +32,11 @@ class TourPackage {
     if (window.scrollY + this.windowHeight > el.offsetTop) {
       let scrollPercent =
         (el.getBoundingClientRect().y / this.windowHeight) * 100;
-      if (scrollPercent < 60) {
+      if (scrollPercent < 70) {
+        let className = 0;
+        this.GenerateHTML(el, className);
         el.classList.add("package__reveal--visible");
+
         el.isVisible = true;
         if (el.isLastItem) {
           window.removeEventListener("scroll", this.scrollThrottle);
@@ -47,6 +50,12 @@ class TourPackage {
       el.isVisible = false;
     });
     this.revealPackages[this.revealPackages.length - 1].isLastItem = true;
+  }
+  GenerateHTML(el, className) {
+    const arr = [];
+    if (el.classList.contains("feature")) {
+      console.log(el, className);
+    }
   }
 }
 

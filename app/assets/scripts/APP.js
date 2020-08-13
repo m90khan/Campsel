@@ -1,5 +1,6 @@
 import "../styles/main.scss";
 import "../scripts/modules/cursor";
+import "lazysizes";
 import Navigation from "../scripts/modules/navigation";
 import TourPackage from "../scripts/modules/tourPackage";
 import stickyHeader from "../scripts/modules/stickyHeader";
