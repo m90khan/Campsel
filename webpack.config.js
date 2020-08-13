@@ -56,6 +56,19 @@ let config = {
     rules: [
       //- condition for mini-css-extract to only use for build task
       cssConfig,
+
+      // ** to include React
+
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-react", "@babel/preset-env"],
+          },
+        },
+      },
     ],
   },
 };
@@ -82,16 +95,18 @@ if (currentTask == "dev-server") {
 }
 if (currentTask == "build") {
   // to handle broswer support of js files
-  config.module.rules.push({
-    test: /\.js$/,
-    exclude: /(node_modules)/,
-    use: {
-      loader: "babel-loader",
-      options: {
-        presets: ["@babel/preset-env"],
-      },
-    },
-  });
+  // ** for plain js
+
+  // config.module.rules.push({
+  //   test: /\.js$/,
+  //   exclude: /(node_modules)/,
+  //   use: {
+  //     loader: "babel-loader",
+  //     options: {
+  //       presets: ["@babel/preset-env"],
+  //     },
+  //   },
+  // });
 
   // to extract css from the bundled js file after builld process
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
