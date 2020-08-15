@@ -9,13 +9,13 @@ const t1 = gsap.timeline({ delay: 0.5 });
 
 (function userEffect() {
   t1.to(".hero__slide__heading", {
-    duration: 5,
+    duration: 3,
     text: "  Let the Travel Begin ...",
     opacity: 1,
     display: "none",
   })
     .to(".hero__slide__logo", {
-      duration: 2,
+      duration: 1.5,
       top: "-20vh",
       left: "2%",
       ease: "power4.in",
@@ -42,5 +42,11 @@ const t1 = gsap.timeline({ delay: 0.5 });
       "<"
     )
     .to(".intro", { display: "none" })
-    .fromTo(".header", { duration: 0.5, y: "-15vh" }, { duration: 0.5, y: 0 });
+    .fromTo(".section-header", { opacity: 0 }, { opacity: 1 });
+
+  // .kill(".section-header", "x,y");
+
+  function killme() {
+    t1.kill(null, "x,y");
+  }
 })();

@@ -45,12 +45,6 @@ a {
 }
 
 body {
-  // background: #faf4f2;
-  // overflow-x: hidden;
-  background: red;
-  @include respond(phone) {
-    overflow-x: hidden;
-    max-width: 100vw;
-    background: yellow;
-  }
+  background: #faf4f2;
+  overflow-x: hidden;
 }
