@@ -14,13 +14,15 @@
     />
     <link rel="icon" href="./assets/images/svg/bonfire.svg" />
   </head>
-  <body class="opening">
+  <body>
     <!-- Header Section -->
 
     <header class="section-header">
       <div class="header">
         <div class="header-logo">
-          <a href=""> <img src="./assets/images/svg/logo.svg" alt="logo" /> </a>
+          <a href="">
+            <img src="./assets/images/svg/logo.svg" alt="logo" />
+          </a>
         </div>
         <div class="header-menu">
           <nav class="navigation">
@@ -49,7 +51,9 @@
                 <a href="#" class="navigation-list__item-link">About</a>
               </li>
               <li class="navigation-list__item">
-                <a href="#" class="navigation-list__item-link">Contact</a>
+                <a href="./animation.html" class="navigation-list__item-link"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -65,12 +69,20 @@
       </div>
     </header>
     <main>
+      <div class="intro">
+        <div class="hero__slide hero__slide--1"></div>
+        <div class="hero__slide hero__slide--2"></div>
+        <div class="hero__slide__logo">
+          <a href="">
+            <img src="./assets/images/svg/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <h2 class="hero__slide__heading"></h2>
+      </div>
+
       <!-- Hero Section -->
       <div class="section-hero">
         <div class="hero">
-          <!-- <div class="wrapper wrapper--medium wrapper--b-margin">
-            <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w" alt="Couple walking down a street.">
-          </div> -->
           <picture>
             <source
               sizes="2010px "
@@ -271,6 +283,116 @@
               </div>
               <div class="package-content">
                 <h4 class="secondary-heading">Tiny Cabin in the mountains</h4>
+                <p class="desc-text">
+                  Book unique camping experiences on over 300,000 campsites.
+                </p>
+                <button class="btn btn--tertiary">Read More</button>
+              </div>
+            </div>
+
+            <!--Package 5-->
+            <div class="package">
+              <div class="package-header">
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/luxury-tiny-beachcabin.png 277w, ./assets/images/img/luxury-tiny-beachcabin-2x.png 554w"
+                    alt="Luxury Tiny Beach Cabin"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
+
+                <svg class="package-header__wishlist">
+                  <use
+                    xlink:href="./assets/images/icons/sprite.svg#icon-heart"
+                  ></use>
+                </svg>
+                <h6 class="package-header__price">$99 / night</h6>
+              </div>
+              <div class="package-content">
+                <h4 class="secondary-heading">Luxury Tiny Beach Cabin</h4>
+                <p class="desc-text">
+                  Book unique camping experiences on over 300,000 campsites.
+                </p>
+                <button class="btn btn--tertiary">Read More</button>
+              </div>
+            </div>
+            <!--Package 6-->
+            <div class="package">
+              <div class="package-header">
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/the-summit-cabin.png 277w, ./assets/images/img/the-summit-cabin-2x.png 554w"
+                    alt="The Summit Cabin"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
+
+                <svg class="package-header__wishlist">
+                  <use
+                    xlink:href="./assets/images/icons/sprite.svg#icon-heart"
+                  ></use>
+                </svg>
+                <h6 class="package-header__price">$75 / night</h6>
+              </div>
+              <div class="package-content">
+                <h4 class="secondary-heading">The Summit Cabin</h4>
+                <p class="desc-text">
+                  Book unique camping experiences on over 300,000 campsites.
+                </p>
+                <button class="btn btn--tertiary">Read More</button>
+              </div>
+            </div>
+            <!--Package 7-->
+            <div class="package">
+              <div class="package-header">
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/kindred-spirits-cabin.png 277w, ./assets/images/img/kindred-spirits-cabin-2x.png 554w"
+                    alt="Kindred Spirits Cabin"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
+
+                <svg class="package-header__wishlist">
+                  <use
+                    xlink:href="./assets/images/icons/sprite.svg#icon-heart"
+                  ></use>
+                </svg>
+                <h6 class="package-header__price">$56 / night</h6>
+              </div>
+              <div class="package-content">
+                <h4 class="secondary-heading">Kindred Spirits Cabin</h4>
+                <p class="desc-text">
+                  Book unique camping experiences on over 300,000 campsites.
+                </p>
+                <button class="btn btn--tertiary">Read More</button>
+              </div>
+            </div>
+
+            <!--Package 8-->
+            <div class="package">
+              <div class="package-header">
+                <picture>
+                  <img
+                    sizes="277px"
+                    data-srcset="./assets/images/img/the-hermitage-cabin.png 277w, ./assets/images/img/the-hermitage-cabin-2x.png 554w"
+                    alt="The Hermitage Cabin"
+                    class="lazyload package-header__image"
+                  />
+                </picture>
+
+                <svg class="package-header__wishlist">
+                  <use
+                    xlink:href="./assets/images/icons/sprite.svg#icon-heart"
+                  ></use>
+                </svg>
+                <h6 class="package-header__price">$80 / night</h6>
+              </div>
+              <div class="package-content">
+                <h4 class="secondary-heading">The Hermitage Cabin</h4>
                 <p class="desc-text">
                   Book unique camping experiences on over 300,000 campsites.
                 </p>
@@ -485,6 +607,7 @@
         </p>
       </div>
     </footer>
+
     <div class="cursor">
       <span class="cursor__text cursor__text--1"> </span>
       <span class="cursor__text cursor__text--2"></span>

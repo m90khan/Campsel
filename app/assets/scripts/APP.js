@@ -1,11 +1,13 @@
 import "../styles/main.scss";
 import "../scripts/modules/cursor";
 import "lazysizes";
+// import "./modules/animation";
+// import "./modules/homeIntro";
 import Navigation from "../scripts/modules/navigation";
 import TourPackage from "../scripts/modules/tourPackage";
 import stickyHeader from "../scripts/modules/stickyHeader";
 
-const navMenu = new Navigation();
+new Navigation();
 new stickyHeader();
 new TourPackage(document.querySelectorAll(".package"));
 new TourPackage(document.querySelectorAll(".feature"));
@@ -16,12 +18,7 @@ if (module.hot) {
 // Testing React Integration
 /*
 * React is integrated . help later when scaling 
-
-import React from "react";
-import ReactDOM from "react-dom";
-import Card from "./modules/reactCard";
-ReactDOM.render(<Card />, document.querySelector("#react-test"));
-*/
+ 
 
 /*
  Topic: to implement AWS Lamda for later  

@@ -39,7 +39,7 @@
     align-self: flex-start;
     margin-top: 4rem;
     @include respond(tab-land) {
-      flex: 1 0 50rem;
+      flex: 1 0 50%;
     }
     &-scrollbtn {
       position: absolute;
