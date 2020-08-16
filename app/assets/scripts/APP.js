@@ -14,17 +14,3 @@ new TourPackage(document.querySelectorAll(".feature"));
 if (module.hot) {
   module.hot.accept();
 }
-
-// Testing React Integration
-/*
-* React is integrated . help later when scaling 
- 
-
-/*
- Topic: to implement AWS Lamda for later  
-*test is complete wit netlify
-import ClientArea from "./modules/ClientArea";
-
-new ClientArea();
-
-*/
