@@ -21,7 +21,7 @@ Visit an adventurous location for yoru next trip <br />
 - [About the Project](#about-the-project)
 - [Process](#process)
 - [Skills](#skills)
-- [Code Snippet](#code)
+- [Code Snipet](#code)
 - [Contact](#Contact)
 
 ---
