@@ -30,6 +30,7 @@ Visit an adventurous location for yoru next trip <br />
 
 Live: https://dazzling-mclean-a17029.netlify.app/
 <img src="./app\assets\images\campsel.gif">
+<img src="./app\assets\images\campsel-1600.gif">
 
 #### Process
 
