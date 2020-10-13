@@ -28,7 +28,7 @@
       color: $color-primary;
       background: $color-grey-light-1;
       border-radius: 1rem;
-      max-width: 12rem;
+      max-width: 50%;
       margin: auto;
       padding: 1.2rem 2rem;
       position: relative;
@@ -48,6 +48,38 @@
 
     p {
       line-height: 1.5;
+    }
+  }
+  &-card {
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 2rem;
+    &__data {
+      flex: 0 0 50%;
+      @include flex(row, flex-start, center);
+
+      svg {
+        margin-right: 0.7rem;
+      }
+      &-icon {
+        height: 2rem;
+        width: 2rem;
+        fill: $color-primary;
+      }
+    }
+    &--space {
+      & > * {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &-cart {
+    @include flex(row, space-between, center);
+
+    &-rating {
+      color: $color-primary;
+      font-size: 1.4rem;
     }
   }
 }

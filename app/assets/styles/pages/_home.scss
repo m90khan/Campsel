@@ -1,12 +1,18 @@
 .section-header {
-  min-height: 15vh;
+  min-height: 10vh;
   @include flex(row, center, center);
   position: relative;
   overflow-x: hidden;
   z-index: 300;
-
+  background: red;
   &--sticky {
     position: fixed;
+  }
+  &--background {
+    background: $color-primary;
+  }
+  &--transparent {
+    background: transparent;
   }
 }
 
