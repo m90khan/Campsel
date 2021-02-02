@@ -64,8 +64,6 @@ Live: https://dazzling-mclean-a17029.netlify.app/
 <br />
 <br />
 
-<img src="./app\assets\images\campsel-overview-2.jpg">
-
 ---
 
 ### Code Snippet
