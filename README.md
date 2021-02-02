@@ -46,7 +46,7 @@ Live: https://dazzling-mclean-a17029.netlify.app/
 - Setup process with netlify to host the site. including the build process
 - Aws function test is successful.
 
-<img src="./app\assets\images\campsel-overview-2.jpg">
+<img src="./app\assets\images\campsel-overview-code.jpg">
 
 ---
 
