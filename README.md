@@ -7,7 +7,7 @@
   <h3 align="center">Campsel | We arrange your Tours  </h3>
 
   <p align="center">
-Visit an adventurous location for yoru next trip <br />
+Visit an adventurous location for your next trip <br />
     <a href="m90khan@gmail.com"><strong>Contact Me</strong></a>
     <br />
     <br />
@@ -29,6 +29,9 @@ Visit an adventurous location for yoru next trip <br />
 ### About the Project
 
 Live: https://dazzling-mclean-a17029.netlify.app/
+
+<img src="./app\assets\images\campsel-overview.jpg">
+
 <img src="./app\assets\images\campsel.gif">
 <img src="./app\assets\images\campsel-1600.gif">
 
@@ -42,6 +45,8 @@ Live: https://dazzling-mclean-a17029.netlify.app/
 - Js is implemented in module-based OOP
 - Setup process with netlify to host the site. including the build process
 - Aws function test is successful.
+
+<img src="./app\assets\images\campsel-overview-2.jpg">
 
 ---
 
@@ -59,13 +64,15 @@ Live: https://dazzling-mclean-a17029.netlify.app/
 <br />
 <br />
 
+<img src="./app\assets\images\campsel-overview-2.jpg">
+
 ---
 
 ### Code Snippet
 
 ```javascript
-import throttle from "lodash/throttle";
-import debounce from "lodash/debounce";
+import throttle from 'lodash/throttle';
+import debounce from 'lodash/debounce';
 class TourPackage {
   constructor(query) {
     this.revealPackages = query;
@@ -76,9 +83,9 @@ class TourPackage {
   }
 
   events() {
-    window.addEventListener("scroll", this.scrollThrottle);
+    window.addEventListener('scroll', this.scrollThrottle);
     window.addEventListener(
-      "resize",
+      'resize',
       debounce(() => {
         this.windowHeight = window.innerHeight;
       }, 333)
@@ -93,30 +100,29 @@ class TourPackage {
   }
   calculateScroll(el) {
     if (window.scrollY + this.windowHeight > el.offsetTop) {
-      let scrollPercent =
-        (el.getBoundingClientRect().y / this.windowHeight) * 100;
+      let scrollPercent = (el.getBoundingClientRect().y / this.windowHeight) * 100;
       if (scrollPercent < 70) {
         let className = 0;
         this.GenerateHTML(el, className);
-        el.classList.add("package__reveal--visible");
+        el.classList.add('package__reveal--visible');
 
         el.isVisible = true;
         if (el.isLastItem) {
-          window.removeEventListener("scroll", this.scrollThrottle);
+          window.removeEventListener('scroll', this.scrollThrottle);
         }
       }
     }
   }
   hideInitial() {
     this.revealPackages.forEach((el) => {
-      el.classList.add("package__reveal");
+      el.classList.add('package__reveal');
       el.isVisible = false;
     });
     this.revealPackages[this.revealPackages.length - 1].isLastItem = true;
   }
   GenerateHTML(el, className) {
     const arr = [];
-    if (el.classList.contains("feature")) {
+    if (el.classList.contains('feature')) {
       console.log(el, className);
     }
   }
@@ -129,22 +135,20 @@ export default TourPackage;
 
 ### Connect with me:
 
-[<img align="left" alt="https://thewebsitekitchen.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
+[<img align="left" alt="Khan | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
 
-[<img align="left" alt="thewebsitekitchen | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
-
-[<img align="left" alt="Thewebsitekitc1 | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
+[<img align="left" alt="twitter | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="khanmohsinx | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="thewebsitekitchen | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-<br />
+[<img align="left" alt="khanuxd | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="khanuxd | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/behance.svg" />][behance]
+[<img align="left" alt="khanuxd | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/dribbble.svg" />][dribble]
 <br />
 
 ---
 
-<img src="./app\assets\images\campsel.jpg">
-
-[website]: https://thewebsitekitchen.com
-[twitter]: https://twitter.com/Thewebsitekitc1
-[youtube]: https://www.youtube.com/channel/UCYPLumL8eNsaej8f5Z2r1Rg
-[instagram]: https://www.instagram.com/thewebsitekitchen/
-[linkedin]: https://linkedin.com/in/khanmohsinx
+[youtube]: https://www.youtube.com/channel/UC96rVfdTKsjZpREnH6CaCOw
+[twitter]: https://twitter.com/m90khan
+[linkedin]: https://www.linkedin.com/in/uxdkhan
+[instagram]: https://www.instagram.com/uxd.khan/
+[behance]: https://www.behance.net/Khan_Mohsin
+[dribble]: https://dribbble.com/uxdkhan
