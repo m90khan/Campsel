@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://www.thewebsitekitchen.com">
+  <a href="https://dazzling-mclean-a17029.netlify.app/">
     <img src="./app\assets\images\svg\bonfire.svg" alt="Logo" width="120" height="120">
   </a>
 
@@ -22,7 +22,7 @@ Visit an adventurous location for your next trip <br />
 - [Process](#process)
 - [Skills](#skills)
 - [Code Snipet](#code)
-- [Contact](#Contact)
+- [Connect with me](#Contact)
 
 ---
 
@@ -42,9 +42,10 @@ Live: https://dazzling-mclean-a17029.netlify.app/
 - Applied componenet based styling
 - GSAP is used for Animation
 - create a seperate div for the cursor. then assign the e.pageY + "px" and e.pageX + "px" to it so to follow the actual cursor
-- Js is implemented in module-based OOP
+- Js is implemented in module-based OOP.
 - Setup process with netlify to host the site. including the build process
-- Aws function test is successful.
+- Create a Aws function for testing.
+- Deployed on Netlify
 
 <img src="./app\assets\images\campsel-overview-code.jpg">
 
